@@ -1,0 +1,3 @@
+ <!--ajax-->
+            @yield('content')
+<!--/ajax-->
