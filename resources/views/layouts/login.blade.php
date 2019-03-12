@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Despacho a Domicilio - @yield('title')</title>
-    <meta name="author" content="Web Master César Cancino Zapata | yo@cesarcancino.com" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <link rel="shortcut icon" href="{{asset('public/images/favicon.ico')}}" />
+    <meta name="author" content="Web Master César Cancino Zapata | yo@cesarcancino.com" />
+    <link rel="shortcut icon" href="{{asset('public/img/favicon.ico')}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/styles.css')}}" rel="stylesheet" />
@@ -14,8 +14,8 @@
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="{{asset('public/js/html5shiv.js')}}"></script>
+      <script src="{{asset('public/js/respond.min.js')}}"></script>
     <![endif]-->
   @stack('css')
   </head>
@@ -26,7 +26,7 @@
              <div class="col-md-4">
                 <!-- Logo -->
                 <div class="logo">
-                   <h1><img  src="{{asset('public/images/logo.png')}}"   /></h1>
+                   <h1><img  src="{{asset('public/img/logo.png')}}"   /></h1>
                 </div>
              </div>
              <div class="col-md-6">

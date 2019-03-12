@@ -1,74 +1,40 @@
-@extends('../layouts.frontend')
+@extends('../layouts.sb_admin')
 @section('title','Dashboard')
 @section('content')
-    <div class="col-md-9">
-            <!--migas de pan-->
-            
-            <!--/migas de pan--> 
-             
-                
-                
-                
-                <div class="row">
-                    <div class="col-md-12 panel-default">
-                        <div class="content-box-header panel-heading">
-                            <div class="panel-title ">Despacho a Domicilio - Dashboard</div>
-                        
-                        </div>
-                        <div class="content-box-large box-with-header">
-                            <div>
+    <!-- Begin Page Content -->
+        <div class="container-fluid">
 
-                                <div class="row">
-                                    <!--fila-->
-                                    <div class="col-sm-6 col-md-3">
-                                        <div> 
-                                            <a href="" class="thumbnail" title="Usuarios">
-                                            <img class="icono_home" src="{{asset('public/images/user.png')}}" />
-                                            <div class="caption center">
-                                                <h3>Usuarios</h3>   
-                                            </div>
-                                            </a>
-                                            
-                                        </div> 
-                                    </div>
-                                    <!--/fila-->
-                                    <!--fila-->
-                                    <div class="col-sm-6 col-md-3">
-                                        <div> 
-                                            <a href="{{route('ordenes_de_despacho_index')}}" class="thumbnail" title="Monitor OD">
-                                            <img class="icono_home" src="{{asset('public/images/monitor_od.png')}}" />
-                                            <div class="caption center">
-                                                <h3>Monitor OD</h3>   
-                                            </div>
-                                            </a>
-                                            
-                                        </div> 
-                                    </div>
-                                    <!--/fila-->
-                                    
-                                    <!--fila-->
-                                    <div class="col-sm-6 col-md-3">
-                                        <div> 
-                                            <a href="{{route('soporte_index')}}" class="thumbnail" title="Soporte">
-                                            <img class="icono_home" src="{{asset('public/images/soporte.png')}}" />
-                                            <div class="caption center">
-                                                <h3>Soporte</h3>   
-                                            </div>
-                                            </a>
-                                            
-                                        </div> 
-                                    </div>
-                                    <!--/fila-->
-                                   
-                                
-                                  
-                                  
-                                   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          </div>    
+          <!-- Page Heading -->
+         <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a>Inicio</a>
+          </li>
+          <!--<li class="breadcrumb-item active">Overview</li>-->
+        </ol>
+
+        <div class="row container">
+          
+          
+         <ul>
+           <li><a href="{{route('index_index1')}}" target="_blank">Ejemplo inicio 1</a></li>
+           <li><a href="{{route('index_index2')}}" target="_blank">Ejemplo inicio 2</a></li>
+           <li><a href="{{route('index_index3')}}" target="_blank">Ejemplo inicio 3</a></li>
+           <li><a href="{{route('acceso_login1')}}" target="_blank">Ejemplo login 1</a></li>
+           <li><a href="{{route('acceso_login2')}}" target="_blank">Ejemplo login 2</a></li>
+           <li><a href="{{route('index_tablas')}}" target="_blank">Ejemplo tablas</a></li>
+           <li><a href="{{route('index_formulario')}}" target="_blank">Ejemplo formulario</a></li>
+         </ul>
+        
+        </div>
+          
+          
+          
+
+        </div>
+        <!-- /.container-fluid -->
                      
     
 @endsection
+@push('css')
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/card.css')}}" />
+@endpush

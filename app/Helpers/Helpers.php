@@ -18,7 +18,8 @@ class Helpers {
       $port = 389;
       $dn = "dc=cencosud, dc=corp";
       $filter = "sAMAccountName=" . $user . "*";
-      $attr = array("displayname", "mail", "givenname", "sn", "useraccountcontrol", "cn", "department", "samaccountname", "telephonenumber", "memberof");
+      $attr = array("displayname", "mail", "givenname", "sn", "useraccountcontrol", "cn", "department", "samaccountname", "memberof");
+      //$attr = array("displayname", "mail", "givenname", "sn", "useraccountcontrol", "cn", "department", "samaccountname", "telephonenumber", "memberof");
       $connection = @ldap_connect($server, $port);
       ldap_set_option($connection, LDAP_OPT_PROTOCOL_VERSION, 3);
       ldap_set_option($connection, LDAP_OPT_REFERRALS, 0);
@@ -50,7 +51,7 @@ class Helpers {
           'mail'=>$info[0]["mail"][0],
           'department'=>$info[0]["department"][0],
           'samaccountname'=>$info[0]["samaccountname"][0],
-          'telephonenumber'=>$info[0]["telephonenumber"][0],
+          //'telephonenumber'=>$info[0]["telephonenumber"][0],
           'memberof'=>$info[0]["memberof"][0],
           'password'=>$password
         );
