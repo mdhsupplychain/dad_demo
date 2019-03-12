@@ -88,7 +88,7 @@
                         <a href="{{route('ordenes_de_despacho_modal_dte',['id'=>1])}}?page=1" title="Imprimir Orden número 18962{{$i}}" class="fancybox fancybox.ajax"><i class="fas fa-search text-success"></i></a>
                       </td>
                       <td style="text-align: center;">
-                        <a href="http://g500603svglh:8080/Facturacion/PDFServlet?docId=fOaZHJUNc3GM2JdGqF642w==" title="Imprimir Orden número 18962{{$i}}" target="_blank"><i class="fas fa-file-pdf text-danger"></i></a>
+                        <a href="{{asset('public/img/guia.pdf')}}" title="Imprimir Orden número 18962{{$i}}" target="_blank"><i class="fas fa-file-pdf text-danger"></i></a>
                       </td>
                     </tr>
                         <!--/ítem-->
